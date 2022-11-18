@@ -1,5 +1,5 @@
 name: weather_open_meteo_client
-description: wather_package
+description: weather_package
 version: 0.0.1
 homepage:
 
@@ -11,11 +11,14 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.5
+  build_runner: ^2.3.2
+  json_annotation: ^4.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  json_serializable: any
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
