@@ -1,7 +1,7 @@
 name: weather_open_meteo_client
 description: weather_package
 version: 0.0.1
-homepage:
+homepage:https://github.com/petyaas/weather_open_meteo_client
 
 environment:
   sdk: '>=2.18.1 <3.0.0'
