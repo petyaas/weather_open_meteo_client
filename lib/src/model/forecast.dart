@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:weather_open_meteo_client/openMeteoApi.dart';
+import 'package:weather_open_meteo_client/weather_open_meteo_client.dart';
 part 'forecast.g.dart';
 @JsonSerializable()
 class Forecast{

@@ -112,7 +112,7 @@ class OpenMeteoApi{
     return  getWeatherByCoordinate(latitude: _list[0].latitude, longitude: _list[0].longitude,current_weather: true);
 
   }
-  Future<List<LocationList>> locationSearch(String query) async {
+  Future<LocationList> locationSearch(String query) async {
     final locationRequest = Uri.https(
       Links.urlByName,
       '/v1/search',
@@ -133,7 +133,7 @@ class OpenMeteoApi{
 
     if (results.isEmpty) throw LocationNotFoundFailure('Location not found!');
     List<LocationList> _list = List<LocationList>.from(results.map((model)=> LocationList.fromJson(model)));
-    return  _list;
+    return  _list.first;
 
   }
 
